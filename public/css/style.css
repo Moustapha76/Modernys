@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
     --color0: #fff;
-    --color1: orangered;
+    --color1: #917310;
     --color2: #4F4F4F;
     --color3: #f0f0f0;
-    --font: "Mukta", sans serif;
+    --color4: #f9480b;
+    --font: "Philosopher", sans serif;
     --hover: black;
-    --radius: 50px;
-    --gradient: linear-gradient(45deg, #ff0000, #ffad00);
+    --radius: 20px;
+    --border-radius: 20px;
+    --gradient: linear-gradient(45deg, #b99212, #872d0e);
 }
 
 * {
@@ -326,7 +328,7 @@ a.tel {
 
 a.tel i {
     color: var(--color0);
-    background-color: var(--color1);
+    background-color: var(--color4);
     padding: 10px;
     border-radius: 50%;
     font-size: 12px;
@@ -942,6 +944,7 @@ section#testimonial .testimony {
     font-style: italic;
     font-weight: 100;
     top: 150px;
+    border-radius: var(--border-radius);
 }
 
 section#testimonial .testimony:before {
@@ -1116,6 +1119,7 @@ section#contact-form {
     display: flex;
     grid-gap: 0px;
     padding: 0;
+    border-radius: var(--border-radius);
 }
 
 section#contact-form aside {
@@ -1123,6 +1127,7 @@ section#contact-form aside {
     padding: 20px 40px;
     color: var(--color0);
     font-size: 18px;
+    border-radius: var(--border-radius);
 }
 
 section#contact-form aside a.tel {
@@ -1418,6 +1423,7 @@ section#accroche .tips {
     color: var(--color0);
     font-size: 18px;
     font-weight: 100;
+    border-radius: var(--border-radius);
 }
 
 section#accroche .tips .btn {
@@ -1507,6 +1513,7 @@ section#contact h2 {
     -webkit-perspective: 1000px;
     perspective: 1000px;
     height: 450px;
+    border-radius: var(--border-radius);
 }
 
 .flip-bx .front,
@@ -1537,13 +1544,15 @@ section#contact h2 {
     line-height: 1.7;
     font-size: 14px;
     letter-spacing: 1px;
-    color: #000
+    color: #000;
+    border-radius: var(--border-radius);
 }
 
 .flip-bx .front img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: var(--border-radius);
 }
 
 .flip-bx .back .inner .content {
@@ -1586,7 +1595,7 @@ ul.social a i {
 }
 
 .flip-bx .back {
-    background: linear-gradient(45deg, #ff0000, #fbff00);
+    background: linear-gradient(45deg, #917310, #f9480b);
     position: absolute;
     top: 0;
     left: 0;
@@ -1597,6 +1606,7 @@ ul.social a i {
     position: absolute;
     background-size: 200%;
     width: 100%;
+    border-radius: var(--border-radius);
 }
 
 .flip-bx .back .inner {
@@ -1692,6 +1702,7 @@ footer p {
 }
 
 footer .map {
+    z-index: 1;
     width: auto;
     margin: 2% 10% 0;
     position: relative;
@@ -1712,6 +1723,7 @@ footer::before {
     background-size: auto;
     inset: 0;
     top: -100px;
+    z-index: 0;
 }
 
 footer .map span {
@@ -1745,6 +1757,7 @@ footer .bande1 {
     padding: 10% 10% 5%;
     grid-gap: 40px;
     grid-template-columns: repeat(4, 1fr);
+    position: relative;
 }
 
 footer .bande1 .bloc {
