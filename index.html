@@ -1,670 +1,2175 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senbuilder</title>
-    <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
-
-<body>
-    <header>
-        <div class="rail"></div>
-        <div class="navbar">
-            <a href="#" class="logo"><img src="./assets/logo.png" alt="logo"></a>
-            <ul class="menu-list">
-                <li class="active"><a href="#">Accueil</a></li>
-                <li><a href="./pages/L'agence.html">L'agence</a></li>
-                <li><a href="./pages/service.html">services</a></li>
-                <li><a href="./pages/projects.html">projects</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-            </ul>
-            <a href="tel:+221 XX XXX XX XX" class="tel"><i class="fa-solid fa-phone"></i>+221 XX XXX XX XX</a>
-            <button class="open"><i class="fa-solid fa-bars"></i></button>
-            <nav class="navbar-mobile">
-                <button class="close"><i class="fa-solid fa-xmark"></i></button>
-                <ul class="menu">
-                    <li class="active"><a href="#">Accueil</a></li>
-                    <li><a href="./pages/L'agence.html">L'agence</a></li>
-                    <li><a href="./pages/service.html">services</a></li>
-                    <li><a href="./pages/projects.html">projects</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="banner">
-            <!-- <div class="split-slideshow">
-                <div class="mask"></div>
-                <div class="slideshow">
-                    <div class="slider">
-                        <div class="item">
-                            <img src="./assets/banner/banner-1.jpg" alt="Image" />
-                        </div>
-                        <div class="item">
-                            <img src="./assets/banner/banner-2.jpg" alt="Image" />
-                        </div>
-                        <div class="item">
-                            <img src="./assets/banner/banner-3.jpg" alt="Image" />
-                        </div>
-                        <div class="item">
-                            <img src="./assets/banner/banner-4.jpg" alt="Image" />
-                        </div>
-                    </div>
-                </div>
-                <div class="slideshow-text">
-                    <div class="item">
-                        <h1>Provide effective Building Solutions</h1>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nihil sunt alias velit, ut fuga quo, numquam optio, incidunt ea facilis excepturi accusamus quod nulla? Fuga non impedit voluptatem beatae?</span>
-                        <div class="btn-group">
-                            <a href="#" role="button" class="btn">Contact us <i class="fa-solid fa-phone-flip"></i></a>
-                            <a href="#" role="button" class="btn">Our services <i class="fa-solid fa-arrow-right-long"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <video src="./construction.mp4" autoplay muted loop></video>
-            <div class="banner-title">
-                <h1>Trouvez le bien qui définit votre succès.</h1>
-                <span>Des résidences d'exception alliant architecture moderne et confort absolu.</span>
-                <div class="btn-group">
-                    <a href="#" role="button" class="btn">Contactez-nous<i class="fa-solid fa-phone-flip"></i></a>
-                    <a href="#" role="button" class="btn">Nos services<i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section id="accroche">
-            <div class="twin">
-                <div class="item">
-                    <span><i class="fa-regular fa-envelope"></i></span>
-                    <div class="twin-contact">
-                        <b>Contact</b>
-                        <span>Email : contact@modernys.com</span>
-                        <span>Phone : +221 XX XXX XX XX</span>
-                    </div>
-                </div>
-                <div class="item">
-                    <span><i class="fa-solid fa-location-dot"></i></span>
-                    <div class="twin-contact">
-                        <b>Adresse</b>
-                        <span>20280 Sacré coeur</span>
-                        <span>Dakar, Sénégal</span>
-                    </div>
-                </div>
-            </div>
-            <div class="tips">
-                <h2>A leading developer of a grade commercial & residential projects</h2>
-                <p>Today Senbuilder has over 4,0000 professionals on its payroll all over the world</p>
-                <a href="#" class="btn btn-more">Learn more <i class="fa-solid fa-circle-chevron-right"></i></a>
-            </div>
-        </section>
-        <section id="about">
-            <div class="container">
-                <div class="title">
-                    <span>About us</span>
-                    <h2>Who we are ?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, accusantium.</p>
-                </div>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti sequi deleniti officia delectus libero quas repellendus doloremque fuga, nobis, consequuntur aliquam fugiat porro pariatur temporibus accusamus cupiditate totamdolores?</p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                    </ul>
-                </div>
-                <div class="jumbotron">
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic dolores rem ab dolorum perferendis nulla consectetur suscipit totam aspernatur, amet pariatur, error veritatis. Explicabo eum alias impedit id consectetur.</p>
-                </div>
-            </div>
-            <div class="img-bloc">
-                <img src="./assets/Accueil.jpg" alt="Image">
-            </div>
-        </section>
-        <section id="services">
-            <div class="title">
-                <span>Our services</span>
-                <h2>High quality constructions solutions for residentials & industries !</h2>
-            </div>
-            <div class="container">
-                <div class="item-service">
-                    <div class="heading">
-                        <i class="fa-solid fa-trowel-bricks"></i>
-                        <h3>Architecture <br> & building</h3>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut, impedit consequuntur odio laudantium eos illo pariatur fuga nulla porro?</p>
-                    <a href="#" class="btn btn-more">Read more</a>
-                </div>
-                <div class="item-service">
-                    <div class="heading">
-                        <i class="fa-solid fa-user-tie"></i>
-                        <h3>Construction <br>Consultants</h3>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut, impedit consequuntur odio laudantium eos illo pariatur fuga nulla porro?</p>
-                    <a href="#" class="btn btn-more">Read more</a>
-                </div>
-                <div class="item-service">
-                    <div class="heading">
-                        <i class="fa-solid fa-ruler-combined"></i>
-                        <h3>Construction <br>Management</h3>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut, impedit consequuntur odio laudantium eos illo pariatur fuga nulla porro?</p>
-                    <a href="#" class="btn btn-more">Read more</a>
-                </div>
-            </div>
-        </section>
-        <section id="hero">
-            <div class="container">
-                <div class="title">
-                    <span>world leading industry corporation</span>
-                    <h2>Best a grade commercial & residential services</h2>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi beatae nam mollitia totam laudantium accusamus facere voluptate ducimus perspiciatis nostrum doloribus quae</p>
-                <div class="twin">
-                    <div class="item">
-                        <span><i class="fa-regular fa-envelope"></i></span>
-                        <div class="twin-contact">
-                            <b>Powerful product strategy</b>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <span><i class="fa-solid fa-location-dot"></i></span>
-                        <div class="twin-contact">
-                            <b>Awwards winning projects</b>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="img-bloc">
-                <img src="./assets/hero.jpg" alt="Image">
-            </div>
-        </section>
-        <section id="recent">
-            <div class="title">
-                <span>Featured projects</span>
-                <h2>Our recents work</h2>
-            </div>
-            <div class="container">
-                <div class="feature">
-                    <div class="img">
-                        <img src="./assets/recent/modern-business-building-scenery-touching-sky.jpg" alt="Image">
-                    </div>
-                    <div class="description">
-                        <h3>The falling water house <span class="subtitle">Building interior</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, vel.</p>
-                        <a href="#" class="btn btn-more">Explore more <i class="fa-solid fa-circle-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="img">
-                        <img src="./assets/recent/modern-residential-building.jpg" alt="Image">
-                    </div>
-                    <div class="description">
-                        <h3>The falling water house <span class="subtitle">Building interior</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, vel.</p>
-                        <a href="#" class="btn btn-more">Explore more <i class="fa-solid fa-circle-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="img">
-                        <img src="./assets/recent/skyscrapers-from-low-angle-view.jpg" alt="Image">
-                    </div>
-                    <div class="description">
-                        <h3>The falling water house <span class="subtitle">Building interior</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, vel.</p>
-                        <a href="#" class="btn btn-more">Explore more <i class="fa-solid fa-circle-chevron-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="marques">
-            <div class="img-logo">
-                <img src="./assets/marques/1.svg" alt="marque">
-            </div>
-            <div class="img-logo">
-                <img src="./assets/marques/2.svg" alt="marque">
-            </div>
-            <div class="img-logo">
-                <img src="./assets/marques/3.svg" alt="marque">
-            </div>
-            <div class="img-logo">
-                <img src="./assets/marques/4.svg" alt="marque">
-            </div>
-            <div class="img-logo">
-                <img src="./assets/marques/5.svg" alt="marque">
-            </div>
-            <div class="img-logo">
-                <img src="./assets/marques/6.svg" alt="marque">
-            </div>
-            <div class="img-logo">
-                <img src="./assets/marques/7.svg" alt="marque">
-            </div>
-            <div class="img-logo">
-                <img src="./assets/marques/8.svg" alt="marque">
-            </div>
-        </section>
-        <section id="contact">
-            <div class="title">
-                <span>Lorem ipsum dolor sit amet.</span>
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, iste.</h2>
-            </div>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            </ul>
-        </section>
-        <section id="contact-form">
-            <aside>
-                <h4>Our location</h4>
-                <span>20280 Mostaqbal</span>
-                <span>Sidi maarouf, Casablanca</span>
-                <h4>Quick contact</h4>
-                <span>Email : contact@modernys.com</span>
-                <span>Phone : +221 XX XXX XX XX</span>
-                <div class="info">
-                    We will getback to you within 24 hours, or call us everyday,<br> 10h : 00 - 17h : 00
-                </div>
-                <a href="tel:+221 XX XXX XX XX" class="tel"><i class="fa-solid fa-phone"></i> +221 XX XXX XX XX</a><br>
-                <a href="tel:0629511197" class="tel"><i class="fa-solid fa-phone"></i> +212 629 511 197</a>
-            </aside>
-            <form action="#">
-                <h3>Request a quote</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda blanditiis accusamus voluptatem delectus. Impedit quae unde reiciendis ad sequi asperiores deserunt tempora, provident culpa at esse numquam non eveniet quam!</p>
-                <div class="input-group">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="input-group">
-                    <input type="text" placeholder="Phone">
-                    <select name="industry" id="industry">
-                        <option value="">Select your L'agence</option>
-                        <option value="L'agence 1">L'agence 1</option>
-                        <option value="L'agence 2">L'agence 2</option>
-                        <option value="L'agence 3">L'agence 3</option>
-                        <option value="L'agence 4">L'agence 4</option>
-                    </select>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <textarea name="msg" id="" cols="30" rows="5" placeholder="Additional details"></textarea>
-                <div class="submit-group">
-                    <a type="submit" class="btn">Submit request <i class="fa-solid fa-paper-plane"></i></a>
-                    <div class="accept">
-                        <input type="checkbox" name="accept" id="accept"><label for="accept">I accept the privacy and terms.</label>
-                    </div>
-                </div>
-            </form>
-        </section>
-        <section id="team">
-            <h2>Our team</h2>
-            <div class="container">
-                <div class="flip-bx">
-                    <div class="front">
-                        <img src="./assets/team/Mathieu.jpg" alt="member">
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <div class="content">
-                                <span class="name">
-                                    <a href="#">Mathieu</a>
-                                </span>
-                                <span class="position">Consultant</span>
-                                <ul class="social">
-                                    <li>
-                                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-bx">
-                    <div class="front">
-                        <img src="./assets/team/Selena.jpg" alt="member">
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <div class="content">
-                                <span class="name">
-                                    <a href="#">Selena</a>
-                                </span>
-                                <span class="position">Engineer</span>
-                                <ul class="social">
-                                    <li>
-                                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-bx">
-                    <div class="front">
-                        <img src="./assets/team/Raphael.jpg" alt="member ">
-                    </div>
-                    <div class="back ">
-                        <div class="inner ">
-                            <div class="content ">
-                                <span class="name ">
-                                    <a href="# ">Raphael</a>
-                                </span>
-                                <span class="position ">Expert</span>
-                                <ul class="social ">
-                                    <li>
-                                        <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com "><i class="fa-brands fa-twitter "></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com "><i class="fa-brands fa-instagram "></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-bx">
-                    <div class="front">
-                        <img src="./assets/team/Victor.jpg" alt="member ">
-                    </div>
-                    <div class="back ">
-                        <div class="inner ">
-                            <div class="content ">
-                                <span class="name ">
-                                    <a href="# ">Victor</a>
-                                </span>
-                                <span class="position ">Architect</span>
-                                <ul class="social ">
-                                    <li>
-                                        <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com "><i class="fa-brands fa-twitter "></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com "><i class="fa-brands fa-instagram "></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="testimonial">
-            <div class="title">
-                <span>What our client say ?</span>
-                <h2>Testimony</h2>
-                <p>View what our customers are saying about us to get a better idea of ​​who we are. </p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis dignissimos, a eum quo, quos commodi repellat corporis veniam nihil, est repellendus molestias voluptatum in! Laborum temporibus possimus accusamus beatae quos?</p>
-                <br>
-                <a href="#" class="btn">Share your advice <i class="fa-solid fa-circle-chevron-right"></i></a>
-            </div>
-            <div class="testimony">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./assets/author.jpg" alt="Image">
-                            <p>They are the best and expertly trained team members who take the extra step and go the extra mill, all to fulfill our promise to deliver innovative and dynamic solutions to our customers to fit the needs of a rapidly changing
-                                global environment which was perfect for our needs !!</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/author.jpg" alt="Image">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, modi! Eaque nobis quae omnis hic. Sit commodi alias libero ea laudantium tenetur dicta, consequuntur neque error eius nihil beatae illum.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next">
-                    <!-- <i class="fas fa-chevron-right"></i> -->
-                </div>
-                <div class="swiper-button-prev">
-                    <!-- <i class="fas fa-chevron-left"></i> -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="map">
-            <div class="title">
-                <span>Location</span>
-                <h2>Where to find us</h2>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6647.187998399065!2d-7.636170653768081!3d33.58988923068274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d29370178259%3A0x56f4486d1d72b804!2sGAUTHIER%2C%20Casablanca%2020250!5e0!3m2!1sfr!2sma!4v1691161886900!5m2!1sfr!2sma"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-        <div class="bande1">
-            <div class="bloc">
-                <img src="./assets/logo.png" alt="logo du site">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, minima.</p>
-                <ul class="social">
-                    <li>
-                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="bloc">
-                <h4>Services</h4>
-                <ul>
-                    <li>
-                        <a href="#">Construction manage</a>
-                    </li>
-                    <li>
-                        <a href="#">Construction Consultants</a>
-                    </li>
-                    <li>
-                        <a href="#">Architecture & Building</a>
-                    </li>
-                    <li>
-                        <a href="#">Accueil renovations</a>
-                    </li>
-                    <li>
-                        <a href="#">Tiling & painting</a>
-                    </li>
-                    <li>
-                        <a href="#">Interior design</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="bloc">
-                <h4>L'agence</h4>
-                <ul>
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">Meet our team</a>
-                    </li>
-                    <li>
-                        <a href="#">News & media</a>
-                    </li>
-                    <li>
-                        <a href="#">Case studies</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Careers</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="bloc">
-                <h4>Newsletter</h4>
-                <p>Sign up for industry alert, thoughts and insights from Senbuilder</p>
-                <form action="#">
-                    <input type="text" name="newsletter" placeholder="Your email">
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </form>
-                <p>Have a question ? <b>click here</b></p>
-            </div>
-        </div>
-        <div class="bande2">
-            <p>Terms & Conditions - Privacy Policy - Sitemap</p>
-            <p>@2023 Senbuilder, by <b>DCS</b> with <i class="fa-solid fa-heart"></i></p>
-        </div>
-    </footer>
-
-
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js" integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.js" integrity="sha512-S2JCciTJc71f1kRG8qFmU1jryXH/mhfYlLvn7XJEwTcD9EJQTRr6gfMtnU6L/nnaodDgbazrmhdCRwbUuiRNQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.js.map"></script>
-    <script>
-        $('.flip-bx').tilt({
-            glare: true,
-            maxGlare: 1
-        })
-        $('.tips').tilt({
-            glare: true,
-            maxGlare: 1
-        })
-        $('.testimony').tilt({
-            glare: true,
-            maxGlare: 1
-        })
-        $('.img-bloc').tilt({
-            glare: true,
-            maxGlare: 1
-        })
-    </script>
-    <script src="./public/js/script.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
-    <script type="module ">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js' ;
-    </script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            spaceBetween: 40,
-            slidesPerView: 1,
-            loop: true,
-
-        })
-        var $ = jQuery;
-        var $slider = $('.slideshow .slider'),
-            maxItems = $('.item', $slider).length,
-            dragging = false,
-            tracking,
-            rightTracking;
-
-        $sliderRight = $('.slideshow').clone().addClass('slideshow-right').appendTo($('.split-slideshow'));
-
-        rightItems = $('.item', $sliderRight).toArray();
-        reverseItems = rightItems.reverse();
-        $('.slider', $sliderRight).html('');
-        for (i = 0; i < maxItems; i++) {
-            $(reverseItems[i]).appendTo($('.slider', $sliderRight));
+    <title>Modernys - Développement Immobilier d'Excellence au Sénégal</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+        :root {
+            --primary: #0c0c0c;
+            --secondary: #d4af37;
+            --accent: #8b7355;
+            --orange: #cb5302;
+            --light: #f8f6f3;
+            --white: #ffffff;
+            --text-dark: #2c2c2c;
+            --radius: 5px;
+            --text-light: #666666;
+            --font1: 'Barlow', sans-serif;
+            --font2: 'Philosopher', serif;
+            --shadow: rgba(0, 0, 0, 0.1);
         }
 
-        $slider.addClass('slideshow-left');
-        $('.slideshow-left').slick({
-            vertical: true,
-            verticalSwiping: true,
-            arrows: false,
-            infinite: true,
-            dots: true,
-            speed: 1000,
-            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
-        }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            if (currentSlide > nextSlide && nextSlide == 0 && currentSlide == maxItems - 1) {
-                $('.slideshow-right .slider').slick('slickGoTo', -1);
-                $('.slideshow-text').slick('slickGoTo', maxItems);
-            } else if (currentSlide < nextSlide && currentSlide == 0 && nextSlide == maxItems - 1) {
-                $('.slideshow-right .slider').slick('slickGoTo', maxItems);
-                $('.slideshow-text').slick('slickGoTo', -1);
+        body {
+            font-family: var(--font1), sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: var(--white);
+        }
+
+section.contact {
+    padding: 0% 10% 6%;
+}
+
+section.bloc-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 10% 0%;
+    grid-gap: 2em;
+    position: relative;
+}
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: transparent;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px var(--shadow);
+            padding: .5rem 5%;
+        }
+
+.navbar.scrolled .logo img {
+    width: 10vw;
+}
+
+        .logo {
+            font-family: var(--font2), serif;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+            display: flex;
+        }
+
+.logo img {
+    width: 14vw;
+}
+
+        .navbar.scrolled .logo {
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        .navbar.scrolled .nav-links a {
+            color: var(--text-dark);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .contact-btn {
+            padding: 0.8rem 2rem;
+            background: var(--secondary);
+            color: var(--primary);
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            font-weight: 400;
+            letter-spacing: 2px;
+            transition: all 0.3s;
+            text-transform: math-auto;
+            font-size: 0.85rem;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+        }
+
+.hero:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+    z-index: 1;
+    opacity: .5;
+}
+
+.hero video {
+    position: absolute;
+}
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(212,175,55,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+            animation: slidePattern 60s linear infinite;
+        }
+
+        @keyframes slidePattern {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(100px, 100px); }
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: var(--white);
+            max-width: 100%;
+            padding: 0 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            animation: fadeInUp 1s ease-out 0.2s backwards;
+        }
+
+        .hero-title {
+            font-family: var(--font2), serif;
+            font-size: 5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease-out 0.4s backwards;
+        }
+
+        .hero-description {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-weight: 300;
+            animation: fadeInUp 1s ease-out 0.6s backwards;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            animation: fadeInUp 1s ease-out 0.8s backwards;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 1.2rem 3rem;
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: math-auto;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 2px;
+            border-radius: var(--radius);
+        }
+
+        .btn-primary {
+            background: var(--secondary);
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 10px 10px 0px rgb(0 0 0 / 8%);
+            letter-spacing: 2px;
+            opacity: .8;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 1px solid #ffffff4f;
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary);
+            box-shadow: 10px 10px 0px rgb(233 233 233 / 16%);
+            letter-spacing: 2px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        .scroll-indicator::before {
+            content: '';
+            display: block;
+            width: 2px;
+            height: 40px;
+            background: linear-gradient(to bottom, var(--secondary), transparent);
+            margin: 0 auto 10px;
+        }
+         /* Presentation Section */
+        .presentation {
+            padding: 5rem 10% 5%;
+            background: var(--white);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+section#presentation .section-header {
+    text-align: left;
+    margin: 0;
+}
+        .presentation-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        .atout-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+            gap: 0rem;
+            margin-top: 4rem;
+        }
+
+.atout-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    padding: 2em 2em 0;
+    transition: all .3s linear !important;
+}
+
+.atout-card:hover {
+    background: var(--secondary);
+    border-color: var(--white);
+}
+
+.atout-card:nth-child(1) {
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+
+.atout-card:nth-child(2) {
+    border-bottom: 1px solid #ececec;
+}
+
+.atout-card:nth-child(4) {}
+
+.atout-card:nth-child(3) {
+    border-right: 1px solid #ececec;
+}
+        .atout-content .atout-card h3 {
+            font-family: var(--font2), serif;
+            font-size: 1.5rem;
+            margin-bottom: 0rem;
+            color: var(--primary);
+        }
+        .atout-content .atout-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        .presentation-img {
+            text-align: center;
+            position: relative;
+            height: 50vh;
+            z-index: 1;
+            border-radius: var(--radius);
+        }
+
+.presentation-img .description {
+    position: relative;
+    margin-top: -5em;
+    background: var(--primary);
+    padding: 3em 3em 3em;
+    width: 90%;
+    left: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1em;
+    color: var(--light);
+}
+
+.presentation-img .description h3 {
+    font-size: 1.7em;
+    line-height: 1.2;
+}
+
+.presentation-img:before {
+    content: "";
+}
+        .presentation-img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px var(--shadow);
+            object-fit: cover;
+        }
+
+        /* Presentation Section */
+
+        /* About Section */
+        .about {
+            padding: 8rem 5% 8em;
+            background: var(--light);
+            position: relative;
+        }
+
+        .about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent 0%, rgba(212, 175, 55, 0.05) 100%);
+            pointer-events: none;
+        }
+
+        .section-header {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-subtitle {
+            font-size: 0.95rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .section-title {
+            font-family: var(--font2), serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: .5rem;
+            line-height: 1.2;
+        }
+
+        .section-description {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+section#presentation .section-header .section-description {
+    font-size: 16px;
+    text-align: justify;
+}
+
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-card {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 2px;
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s;
+        }
+
+        .about-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px var(--shadow);
+        }
+
+        .about-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: var(--white);
+        }
+
+.atout-card span.about-icon {
+    background: transparent;
+    padding: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
+    color: var(--shadow);
+    font-size: 45px;
+}
+
+        .about-card h3 {
+            font-family: var(--font2), serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .about-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 8rem 1% 1%;
+            background: var(--white);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 1rem;
+            margin-top: 4rem;
+        }
+
+        .project-card {
+            position: relative;
+            height: 65vh;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 2px;
+            background: var(--primary);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.1);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 3rem;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-category {
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-title {
+            font-family: var(--font2), serif;
+            font-size: 2rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--secondary);
+            font-weight: 600;
+            margin-top: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 0rem 5%;
+            background: var(--accent);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(./logo.png);
+            opacity: 0.3;
+            background-size: 45%;
+            background-position: center;
+            filter: blur(45px);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 0rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-item {
+            text-align: center;
+            border-right: 1px solid #d4af376b;
+            padding: 2vw;
+        }
+
+.stat-item:last-child {
+    border: 0;
+}
+
+        .stat-number {
+            font-family: var(--font2), serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 8rem 5%;
+            background: var(--light);
+            position: relative;
+        }
+
+section#services:before {
+    content: "";
+}
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 2px;
+            transition: all 0.4s;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: linear-gradient(to top, rgba(212, 175, 55, 0.05), transparent);
+            transition: height 0.4s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px var(--shadow);
+        }
+
+.service-card:hover .service-number {
+    opacity: 1;
+    transform: translate(-10px);
+}
+
+        .service-card:hover::after {
+            height: 100%;
+        }
+
+        .service-number {
+            font-family: var(--font2), serif;
+            font-size: 3rem;
+            color: var(--secondary);
+            opacity: .3;
+            margin-bottom: 0rem;
+            position: absolute;
+            right: 5%;
+            top: 0%;
+            font-weight: bolder;
+            transition: all .3s linear;
+        }
+
+        .service-card h3 {
+            font-family: var(--font1), serif;
+            font-size: 1.6rem;
+            margin-bottom: .5rem;
+            color: var(--primary);
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+        /* form section */
+        /* Animated Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(212,175,55,0.08)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            animation: moveGrid 60s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes moveGrid {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(100px, 100px); }
+        }
+
+        /* Floating Particles */
+        .particle {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0;
+            animation: float 15s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                opacity: 0;
+                transform: translateY(0) translateX(0);
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(50px);
+            }
+        }
+
+        /* Main Container */
+        .contact-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 0;
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 20px 20px 50px rgb(0 0 0 / 10%);
+            position: relative;
+            z-index: 1;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Left Side - Info */
+        .contact-info {
+            background: var(--accent);
+            padding: 4rem;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-info::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 0.3; }
+        }
+
+        .contact-info::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -30%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .info-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .info-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        .info-items {
+            position: relative;
+            z-index: 1;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInLeft 0.6s ease-out forwards;
+        }
+
+        .info-item:nth-child(1) { animation-delay: 0.2s; }
+        .info-item:nth-child(2) { animation-delay: 0.4s; }
+        .info-item:nth-child(3) { animation-delay: 0.6s; }
+        .info-item:nth-child(4) { animation-delay: 0.8s; }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            transition: all 0.3s;
+        }
+
+        .info-item:hover .info-icon {
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .info-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            font-weight: 600;
+        }
+
+        .info-content p,
+        .info-content a {
+            opacity: 0.9;
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.3s;
+        }
+
+        .info-content a:hover {
+            opacity: 1;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .social-link:hover {
+            background: var(--white);
+            color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        /* Right Side - Form */
+        .contact-form-wrapper {
+            padding: 4rem;
+            background: var(--white);
+        }
+
+        .form-header {
+            margin-bottom: 2rem;
+        }
+
+        .form-header h2 {
+            font-family: var(--font2);
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 0rem;
+        }
+
+        .form-header p {
+            color: var(--text-light);
+            font-size: 1.05rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.8rem;
+            position: relative;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.6rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            border: 2px solid #e0e0e0;
+            background: var(--white);
+            font-family: 'Barlow', sans-serif;
+            font-size: 1rem;
+            color: var(--text-dark);
+            transition: all 0.3s;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+            transform: translateY(-2px);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg fill="%23666" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 20px;
+        }
+
+        /* Custom Checkbox */
+        .checkbox-wrapper {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .custom-checkbox {
+            position: relative;
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+
+        .custom-checkbox input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 22px;
+            height: 22px;
+            background: var(--white);
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .custom-checkbox input:checked ~ .checkmark {
+            background: var(--secondary);
+            border-color: var(--secondary);
+        }
+
+        .checkmark::after {
+            content: '';
+            position: absolute;
+            display: none;
+            left: 6px;
+            top: 2px;
+            width: 6px;
+            height: 11px;
+            border: solid var(--primary);
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
+        .custom-checkbox input:checked ~ .checkmark::after {
+            display: block;
+        }
+
+        .checkbox-wrapper label {
+            margin: 0;
+            text-transform: none;
+            font-weight: 400;
+            letter-spacing: normal;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        /* Submit Button */
+        /* .submit-btn {
+            width: 100%;
+            padding: 1.3rem;
+            background: var(--gradient);
+            color: var(--primary);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: all 0.4s;
+            margin-top: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(-1px);
+        } */
+
+        /* Success Message */
+        .success-message {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: #27ae60;
+            color: white;
+            padding: 1.5rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(39, 174, 96, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            opacity: 0;
+            transform: translateX(400px);
+            transition: all 0.4s;
+            z-index: 1000;
+        }
+
+        .success-message.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .success-icon {
+            width: 30px;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        /* Loading State */
+        .submit-btn.loading {
+            pointer-events: none;
+            opacity: 0.7;
+        }
+
+        .submit-btn.loading::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            left: 50%;
+            margin-left: -10px;
+            margin-top: -10px;
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 0.6s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Input Error State */
+        input.error,
+        textarea.error,
+        select.error {
+            border-color: #e74c3c;
+            animation: shake 0.3s;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        .error-message {
+            color: #e74c3c;
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+            display: none;
+        }
+
+        input.error ~ .error-message,
+        textarea.error ~ .error-message,
+        select.error ~ .error-message {
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                padding: 3rem 2rem;
+            }
+
+            .contact-form-wrapper {
+                padding: 3rem 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .contact-container {
+                border-radius: 15px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .info-title {
+                font-size: 2rem;
+            }
+
+            .form-header h2 {
+                font-size: 2rem;
+            }
+
+            .success-message {
+                right: 1rem;
+                left: 1rem;
+                top: 1rem;
+            }
+        }
+        /* form section */
+        /* CTA Section */
+        .cta {
+            padding: 8rem 5% 4em;
+            background: var(--white);
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+section#contact:before {
+    content: "";
+}
+
+        .cta::before {
+        }
+
+        .cta-content {
+            max-width: 50%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta h2 {
+            font-family: var(--font2), serif;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            color: var(--primary);
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            color: var(--primary);
+        }
+        /* Map section */
+        .map {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        /* Footer */
+        .footer {
+            background: var(--primary);
+            color: var(--white);
+            padding: 4rem 10% 2rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-family: var(--font2), serif;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+        }
+
+        .footer-section p, .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--secondary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        a.social-link {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        a.social-link:hover {
+            border-color: var(--secondary);
+            background: var(--secondary);
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a class="logo"><img src="./logo.png" alt="logo du site"></a>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À Propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="contact-btn">Nous Contacter</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <video src="./immobilier.mp4" autoplay muted loop></video>
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-subtitle">Développement Immobilier d'Excellence</div>
+            <h1 class="hero-title">Bâtir l'Avenir du Sénégal</h1>
+            <p class="hero-description">
+                Des projets résidentiels et commerciaux qui redéfinissent le luxe et l'innovation au cœur de Dakar
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Découvrir nos projets</button>
+                <button class="btn-secondary">En savoir plus</button>
+            </div>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-target="25">0</div>
+                <div class="stat-label">Projets Réalisés</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-label">Unités Livrées</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="1500">0</div>
+                <div class="stat-label">Clients Satisfaits</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Années d'Expérience</div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Presentation Section -->
+    <section class="presentation" id="presentation">
+        <div class="section-header" data-aos="fade-right" data-aos-duration="1500">
+            <div class="section-subtitle">Qui sommes nous ?</div>
+            <h2 class="section-title">Pourquoi nous choisir</h2>
+            <div class="section-description">
+                Rejoignez-nous dans notre mission de bâtir un avenir meilleur pour le Sénégal, un projet à la fois.<br>
+                Depuis notre création en 2009, nous nous engageons à transformer le paysage urbain sénégalais en développant des espaces de vie et de travail qui répondent aux besoins modernes tout en respectant l'environnement. Notre équipe d'experts passionnés travaille en étroite collaboration avec des architectes renommés, des ingénieurs qualifiés et des artisans locaux pour garantir que chaque projet reflète notre engagement envers l'excellence.
+            </div>
+            <br>
+            <button class="btn-primary">En savoir plus</button>
+        </div>
+        <div class="presentation-content">
+            <!-- <p>Chez Modernys, nous croyons que chaque projet est une opportunité de créer quelque chose d'exceptionnel. Que ce soit des résidences luxueuses, des centres commerciaux innovants ou des espaces de bureaux fonctionnels, nous mettons un point d'honneur à offrir des solutions immobilières qui dépassent les attentes de nos clients.</p> -->
+            <div class="atout-content">
+                <div class="atout-card" data-aos="fade-up" data-aos-duration="1500">
+                    <span class="about-icon"><i class="fa-solid fa-hammer"></i></span>
+                    <div class="atout-description">
+                        <h3>Rénovation</h3>
+                        <p>Lorem ipsum dolor sit piscing sed diam nonmy end .</p>
+                    </div>
+                </div>
+                <div class="atout-card" data-aos="fade-up" data-aos-duration="1500">
+                    <span class="about-icon"><i class="fa-solid fa-handshake"></i></span>
+                    <div class="atout-description">
+                        <h3>Accompagnement</h3>
+                        <p>Lorem ipsum dolor sit piscing sed diam nonmy end .</p>
+                    </div>
+                </div>
+                <div class="atout-card" data-aos="fade-up" data-aos-duration="1500">
+                    <span class="about-icon"><i class="fa-solid fa-star"></i></span>
+                    <div class="atout-description">
+                        <h3>Qualité</h3>
+                        <p>Lorem ipsum dolor sit piscing sed diam nonmy end .</p>
+                    </div>
+                </div>
+                <div class="atout-card" data-aos="fade-up" data-aos-duration="1500">
+                    <span class="about-icon"><i class="fa-solid fa-globe"></i></span>
+                    <div class="atout-description">
+                        <h3>Professionalisme</h3>
+                        <p>Lorem ipsum dolor sit piscing sed diam nonmy end .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="apropos">
+         <!-- Floating Particles -->
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
+        <div class="particle" style="left: 40%; animation-delay: 1s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 3s;"></div>
+        <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 2.5s;"></div>
+        <div class="particle" style="left: 80%; animation-delay: 4.5s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 1.5s;"></div>
+        <div class="section-header" data-aos="zoom-up" data-aos-duration="1500">
+            <div class="section-subtitle">Notre Vision</div>
+            <h2 class="section-title">Excellence & Innovation</h2>
+            <p class="section-description">
+                Modernys est un leader du développement immobilier au Sénégal, spécialisé dans la création de projets résidentiels et commerciaux haut de gamme qui allient design contemporain, qualité supérieure et durabilité.
+            </p>
+        </div>
+        <div class="about-content">
+            <div class="about-card" data-aos="zoom-in" data-aos-duration="1700">
+                <div class="about-icon"><i class="fa-solid fa-suitcase"></i></div>
+                <h3>Expertise</h3>
+                <p>Plus de 15 ans d'expérience dans le développement de projets immobiliers d'exception, avec une équipe de professionnels dévoués.</p>
+            </div>
+            <div class="about-card" data-aos="zoom-in" data-aos-duration="1900">
+                <div class="about-icon"><i class="fa-solid fa-star"></i></div>
+                <h3>Qualité Premium</h3>
+                <p>Des standards de construction élevés et des finitions luxueuses pour garantir la satisfaction et le confort de nos clients.</p>
+            </div>
+            <div class="about-card" data-aos="zoom-in" data-aos-duration="2100">
+                <div class="about-icon"><i class="fa-solid fa-leaf"></i></div>
+                <h3>Durabilité</h3>
+                <p>Engagement envers des pratiques de construction écologiques et responsables pour un avenir meilleur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projets">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+            <div class="section-subtitle">Nos Réalisations</div>
+            <h2 class="section-title">Projets Phares</h2>
+            <p class="section-description">
+                Découvrez nos développements immobiliers qui redéfinissent le standard de vie au Sénégal
+            </p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop" alt="Résidence Almadies" class="project-image">
+                <div class="project-overlay">
+                    <div class="project-category">Résidentiel</div>
+                    <h3 class="project-title">Résidence Les Almadies</h3>
+                    <p class="project-description">
+                        Complexe résidentiel de luxe avec vue panoramique sur l'océan
+                    </p>
+                    <a href="#" class="project-link">Voir le projet →</a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop" alt="Centre Commercial" class="project-image">
+                <div class="project-overlay">
+                    <div class="project-category">Commercial</div>
+                    <h3 class="project-title">Modernys Business Center</h3>
+                    <p class="project-description">
+                        Centre d'affaires moderne au cœur du Plateau
+                    </p>
+                    <a href="#" class="project-link">Voir le projet →</a>
+                </div>
+            </div>
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop" alt="Villa Prestige" class="project-image">
+                <div class="project-overlay">
+                    <div class="project-category">Résidentiel</div>
+                    <h3 class="project-title">Villas Prestige</h3>
+                    <p class="project-description">
+                        Villas de standing avec jardins privés et piscines
+                    </p>
+                    <a href="#" class="project-link">Voir le projet →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+            <div class="section-subtitle">Nos Services</div>
+            <h2 class="section-title">Une Offre Complète</h2>
+            <p class="section-description">
+                De la conception à la livraison, nous accompagnons chaque projet avec expertise et passion
+            </p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service-number">01</div>
+                <h3>Développement</h3>
+                <p>Conception et réalisation de projets immobiliers résidentiels et commerciaux sur mesure.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1700">
+                <div class="service-number">02</div>
+                <h3>Architecture</h3>
+                <p>Design architectural contemporain alliant esthétique, fonctionnalité et durabilité.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1900">
+                <div class="service-number">03</div>
+                <h3>Construction</h3>
+                <p>Gestion complète de la construction avec les meilleurs matériaux et artisans.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-duration="2100">
+                <div class="service-number">04</div>
+                <h3>Conseil</h3>
+                <p>Accompagnement personnalisé pour vos projets d'investissement immobilier.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-duration="2200">
+                <div class="service-number">05</div>
+                <h3>Gestion</h3>
+                <p>Services de gestion et maintenance pour préserver la valeur de votre patrimoine.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-duration="2300">
+                <div class="service-number">06</div>
+                <h3>Financement</h3>
+                <p>Solutions de financement adaptées pour concrétiser vos projets immobiliers.</p>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="bloc-img">
+        <div class="presentation-img" data-aos="fade-left" data-aos-duration="1500">
+            <img src="./2148039962.jpg" alt="">
+            <div class="description">
+                <h3>Un immobilier plus simple, plus rassurant</h3>
+                <p>On vous aide à choisir, comparer et sécuriser votre achat avec des étapes claires. Résidence principale ou investissement : vous avancez sereinement.</p>
+                <button class="btn-secondary">Voir nos services →</button>
+            </div>
+        </div>
+        <div class="presentation-img" data-aos="fade-left" data-aos-duration="1500">
+            <img src="./2151933439.jpg" alt="">
+            <div class="description">
+                <h3>Trouvez le projet à votre goût</h3>
+                <p>Que vous cherchiez une opportunité immédiate, un chantier en cours ou une résidence déjà livrée, Modernys vous guide vers le meilleur choix.</p>
+                <button class="btn-secondary">Voir nos services →</button>
+            </div>
+        </div>
+    </section> -->
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-content" data-aos="fade-left" data-aos-duration="1500">
+            <h2>Prêt à Investir dans Votre Avenir ?</h2>
+            <p>Contactez-nous dès aujourd'hui pour découvrir nos opportunités d'investissement et trouver le projet qui correspond à vos ambitions.</p>
+            <!-- <button class="btn-primary">Prendre Rendez-vous</button> -->
+        </div>
+    </section>
+
+    <section class="contact" data-aos="fade-up" data-aos-duration="1500">
+
+        <!-- Success Message -->
+        <div class="success-message" id="successMessage">
+            <div class="success-icon">✓</div>
+            <div>
+                <strong>Message envoyé !</strong><br>
+                Nous vous répondrons sous 24h.
+            </div>
+        </div>
+
+        <!-- Main Container -->
+        <div class="contact-container">
+            <!-- Left Side - Info -->
+            <div class="contact-info">
+                <a class="logo"><img src="./logo.png" alt="logo du site"></a>
+                <h1 class="info-title">Transformons votre vision en réalité</h1>
+                <p class="info-description">
+                    Notre équipe d'experts est prête à vous accompagner dans tous vos projets immobiliers. Contactez-nous dès aujourd'hui pour une consultation gratuite.
+                </p>
+
+                <div class="info-items">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Notre Adresse</h4>
+                            <p>Sacré coeur<br>Dakar, Sénégal</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h4>Téléphone</h4>
+                            <p>
+                                <a href="tel:+221338234567">+221 33 823 45 67</a><br>
+                                <a href="tel:+221776543210">+221 77 654 32 10</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>
+                                <a href="mailto:contact@modernys.sn">contact@modernys.sn</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-content">
+                            <h4>Horaires</h4>
+                            <p>Lun - Ven: 8h00 - 18h00<br>Sam: 9h00 - 13h00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Side - Form -->
+            <div class="contact-form-wrapper">
+                <div class="form-header">
+                    <h2>Parlons de votre projet</h2>
+                    <p>Remplissez le formulaire et nous vous répondrons dans les 24 heures</p>
+                </div>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prenom">Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                            <div class="error-message">Ce champ est requis</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" name="nom" required>
+                            <div class="error-message">Ce champ est requis</div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message">Email invalide</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone *</label>
+                            <input type="tel" id="telephone" name="telephone" required>
+                            <div class="error-message">Téléphone invalide</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sujet">Type de Projet *</label>
+                        <select id="sujet" name="sujet" required>
+                            <option value="">Sélectionnez le type de projet</option>
+                            <option value="achat-appartement">Achat d'Appartement</option>
+                            <option value="achat-villa">Achat de Villa</option>
+                            <option value="projet-commercial">Projet Commercial</option>
+                            <option value="investissement">Opportunité d'Investissement</option>
+                            <option value="construction">Construction Sur Mesure</option>
+                            <option value="visite">Demande de Visite</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <div class="error-message">Veuillez sélectionner un type</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget Estimé</label>
+                        <select id="budget" name="budget">
+                            <option value="">Sélectionnez une fourchette</option>
+                            <option value="moins-50m">Moins de 50M FCFA</option>
+                            <option value="50-100m">50M - 100M FCFA</option>
+                            <option value="100-200m">100M - 200M FCFA</option>
+                            <option value="200-500m">200M - 500M FCFA</option>
+                            <option value="plus-500m">Plus de 500M FCFA</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Votre Message *</label>
+                        <textarea id="message" name="message" required placeholder="Décrivez-nous votre projet en détail..."></textarea>
+                        <div class="error-message">Ce champ est requis</div>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                        </div>
+                        <label for="newsletter">
+                            Je souhaite recevoir les actualités et offres exclusives de Modernys
+                        </label>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="conditions" name="conditions" required>
+                            <span class="checkmark"></span>
+                        </div>
+                        <label for="conditions">
+                            J'accepte que mes données soient utilisées pour me recontacter *
+                        </label>
+                    </div>
+                    <br>
+                    <button type="submit" class="submit-btn btn-primary" id="submitBtn">
+                        Envoyer le Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246948.5203436763!2d-17.49336396159381!3d14.736850696040028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10b1afcd7b469%3A0xc48b37cb846bc38f!2sR%C3%A9gion%20de%20Dakar!5e0!3m2!1sfr!2ssn!4v1768473751751!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section" data-aos="fade-up" data-aos-duration="1000">
+                <h3>Navigation</h3>
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À Propos</a>
+                <a href="#projets">Projets</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section" data-aos="fade-up" data-aos-duration="1200">
+                <h3>Contact</h3>
+                <p>Dakar, Sénégal</p>
+                <p>Email: contact@modernys.sn</p>
+                <p>Tél: +221 33 XXX XX XX</p>
+            </div>
+            <div class="footer-section" data-aos="fade-up" data-aos-duration="1400">
+                <h3>Horaires</h3>
+                <p>Lundi - Vendredi</p>
+                <p>8h00 - 18h00</p>
+                <p>Samedi: 9h00 - 13h00</p>
+            </div>
+            <div class="footer-section" data-aos="fade-up" data-aos-duration="1600">
+                <a class="logo"><img src="./logo.png" alt="logo du site"></a>
+                <p>Leader du développement immobilier d'excellence au Sénégal depuis 2009.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Modernys. Tous droits réservés. | Développement Immobilier d'Excellence</p>
+        </div>
+    </footer>
+    <script src="./aos.js"></script>
+    <script>
+        AOS.init();
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
             } else {
-                $('.slideshow-right .slider').slick('slickGoTo', maxItems - 1 - nextSlide);
-                $('.slideshow-text').slick('slickGoTo', nextSlide);
+                navbar.classList.remove('scrolled');
             }
-        }).on("mousewheel ", function(event) {
-            event.preventDefault();
-            if (event.deltaX > 0 || event.deltaY < 0) {
-                $(this).slick('slickNext');
-            } else if (event.deltaX < 0 || event.deltaY > 0) {
-                $(this).slick('slickPrev');
-            };
-        }).on('mousedown touchstart', function() {
-            dragging = true;
-            tracking = $('.slick-track', $slider).css('transform');
-            tracking = parseInt(tracking.split(',')[5]);
-            rightTracking = $('.slideshow-right .slick-track').css('transform');
-            rightTracking = parseInt(rightTracking.split(',')[5]);
-        }).on('mousemove touchmove', function() {
-            if (dragging) {
-                newTracking = $('.slideshow-left .slick-track').css('transform');
-                newTracking = parseInt(newTracking.split(',')[5]);
-                diffTracking = newTracking - tracking;
-                $('.slideshow-right .slick-track').css({
-                    'transform': 'matrix(1, 0, 0, 1, 0, ' + (rightTracking - diffTracking) + ')'
-                });
-            }
-        }).on('mouseleave touchend mouseup', function() {
-            dragging = false;
         });
 
-        $('.slideshow-right .slider').slick({
-            swipe: true,
-            vertical: true,
-            arrows: false,
-            infinite: true,
-            speed: 950,
-            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
-            initialSlide: maxItems - 1,
-            loop: true
+        // Animate stats on scroll
+        const animateStats = () => {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.getAttribute('data-target'));
+                        const duration = 2000;
+                        const increment = target / (duration / 16);
+                        let current = 0;
+                        
+                        const updateNumber = () => {
+                            current += increment;
+                            if (current < target) {
+                                entry.target.textContent = Math.floor(current);
+                                requestAnimationFrame(updateNumber);
+                            } else {
+                                entry.target.textContent = target + '+';
+                            }
+                        };
+                        
+                        updateNumber();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            statNumbers.forEach(stat => observer.observe(stat));
+        };
+
+        animateStats();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
-        $('.slideshow-text').slick({
-            swipe: false,
-            vertical: true,
-            arrows: false,
-            infinite: true,
-            speed: 900,
-            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
+
+        // Add parallax effect to hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroContent = document.querySelector('.hero-content');
+            if (heroContent) {
+                heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
+                heroContent.style.opacity = 1 - (scrolled / 800);
+            }
         });
+
+        // Intersection Observer for fade-in animations
+        const observeElements = () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // document.querySelectorAll('.about-card, .project-card, .service-card').forEach(el => {
+            //     el.style.opacity = '0';
+            //     el.style.transform = 'translateY(30px)';
+            //     el.style.transition = 'all 0.3s ease-out';
+            //     observer.observe(el);
+            // });
+        };
+
+        observeElements();
+
+        // Button interactions
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+
+
+         // Form Validation and Submission
+        const form = document.getElementById('contactForm');
+        const submitBtn = form.querySelector('.submit-btn');
+        const successMessage = document.getElementById('successMessage');
+
+        // Email validation
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        // Phone validation
+        function isValidPhone(phone) {
+            return /^[\d\s\+\-\(\)]+$/.test(phone) && phone.replace(/\D/g, '').length >= 9;
+        }
+
+        // Validate single field
+        function validateField(field) {
+            const value = field.value.trim();
+            let isValid = true;
+
+            if (field.hasAttribute('required') && !value) {
+                isValid = false;
+            } else if (field.type === 'email' && value && !isValidEmail(value)) {
+                isValid = false;
+            } else if (field.type === 'tel' && value && !isValidPhone(value)) {
+                isValid = false;
+            } else if (field.type === 'checkbox' && field.hasAttribute('required') && !field.checked) {
+                isValid = false;
+            }
+
+            if (!isValid) {
+                field.classList.add('error');
+            } else {
+                field.classList.remove('error');
+            }
+
+            return isValid;
+        }
+
+        // Real-time validation
+        form.querySelectorAll('input, textarea, select').forEach(field => {
+            field.addEventListener('blur', () => validateField(field));
+            field.addEventListener('input', () => {
+                if (field.classList.contains('error')) {
+                    validateField(field);
+                }
+            });
+        });
+
+        // Form submission
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Validate all fields
+            const fields = form.querySelectorAll('input, textarea, select');
+            let isFormValid = true;
+
+            fields.forEach(field => {
+                if (!validateField(field)) {
+                    isFormValid = false;
+                }
+            });
+
+            if (!isFormValid) {
+                // Scroll to first error
+                const firstError = form.querySelector('.error');
+                if (firstError) {
+                    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                return;
+            }
+
+            // Show loading state
+            submitBtn.classList.add('loading');
+            submitBtn.textContent = '';
+
+            // Simulate API call
+            setTimeout(() => {
+                // Remove loading state
+                submitBtn.classList.remove('loading');
+                submitBtn.textContent = 'Envoyer le Message';
+
+                // Show success message
+                successMessage.classList.add('show');
+
+                // Reset form
+                form.reset();
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+
+                // Log form data (in production, this would be sent to a server)
+                const formData = new FormData(form);
+                console.log('Form submitted with data:');
+                for (let [key, value] of formData.entries()) {
+                    console.log(`${key}: ${value}`);
+                }
+            }, 2000);
+        });
+
+        // Smooth animations on load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.form-group').forEach((group, index) => {
+                setTimeout(() => {
+                    group.style.opacity = '0';
+                    group.style.transform = 'translateY(20px)';
+                    group.style.transition = 'all 0.5s ease-out';
+                    
+                    setTimeout(() => {
+                        group.style.opacity = '1';
+                        group.style.transform = 'translateY(0)';
+                    }, 50);
+                }, index * 50);
+            });
+        });
+
+        // Add ripple effect to button
+        submitBtn.addEventListener('click', function(e) {
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.style.position = 'absolute';
+            ripple.style.borderRadius = '50%';
+            ripple.style.background = 'rgba(255, 255, 255, 0.5)';
+            ripple.style.transform = 'scale(0)';
+            ripple.style.animation = 'ripple 0.6s ease-out';
+            ripple.style.pointerEvents = 'none';
+
+            this.appendChild(ripple);
+
+            setTimeout(() => ripple.remove(), 600);
+        });
+
+        // Add ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
     </script>
 </body>
-
 </html>

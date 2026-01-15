@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senbuilder</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="rail"></div>
+        <div class="navbar">
+            <a href="#" class="logo"><img src="./assets/logo.png" alt="logo"></a>
+            <ul class="menu-list">
+                <li class="active"><a href="#">Accueil</a></li>
+                <li><a href="./pages/L'agence.html">L'agence</a></li>
+                <li><a href="./pages/service.html">services</a></li>
+                <li><a href="./pages/projects.html">projects</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+            <a href="tel:+221 XX XXX XX XX" class="tel"><i class="fa-solid fa-phone"></i>+221 XX XXX XX XX</a>
+            <button class="open"><i class="fa-solid fa-bars"></i></button>
+            <nav class="navbar-mobile">
+                <button class="close"><i class="fa-solid fa-xmark"></i></button>
+                <ul class="menu">
+                    <li class="active"><a href="#">Accueil</a></li>
+                    <li><a href="./pages/L'agence.html">L'agence</a></li>
+                    <li><a href="./pages/service.html">services</a></li>
+                    <li><a href="./pages/projects.html">projects</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <!-- <div class="split-slideshow">
+                <div class="mask"></div>
+                <div class="slideshow">
+                    <div class="slider">
+                        <div class="item">
+                            <img src="./assets/banner/banner-1.jpg" alt="Image" />
+                        </div>
+                        <div class="item">
+                            <img src="./assets/banner/banner-2.jpg" alt="Image" />
+                        </div>
+                        <div class="item">
+                            <img src="./assets/banner/banner-3.jpg" alt="Image" />
+                        </div>
+                        <div class="item">
+                            <img src="./assets/banner/banner-4.jpg" alt="Image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshow-text">
+                    <div class="item">
+                        <h1>Provide effective Building Solutions</h1>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nihil sunt alias velit, ut fuga quo, numquam optio, incidunt ea facilis excepturi accusamus quod nulla? Fuga non impedit voluptatem beatae?</span>
+                        <div class="btn-group">
+                            <a href="#" role="button" class="btn">Contact us <i class="fa-solid fa-phone-flip"></i></a>
+                            <a href="#" role="button" class="btn">Our services <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <video src="./construction.mp4" autoplay muted loop></video>
+            <div class="banner-title">
+                <h1>Trouvez le bien qui définit votre succès.</h1>
+                <span>Des résidences d'exception alliant architecture moderne et confort absolu.</span>
+                <div class="btn-group">
+                    <a href="#" role="button" class="btn">Contactez-nous<i class="fa-solid fa-phone-flip"></i></a>
+                    <a href="#" role="button" class="btn">Nos services<i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="accroche">
+            <div class="twin">
+                <div class="item">
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <div class="twin-contact">
+                        <b>Contact</b>
+                        <span>Email : contact@modernys.com</span>
+                        <span>Phone : +221 XX XXX XX XX</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <div class="twin-contact">
+                        <b>Adresse</b>
+                        <span>20280 Sacré coeur</span>
+                        <span>Dakar, Sénégal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tips">
+                <h2>A leading developer of a grade commercial & residential projects</h2>
+                <p>Today Senbuilder has over 4,0000 professionals on its payroll all over the world</p>
+                <a href="#" class="btn btn-more">Learn more <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="title">
+                    <span>About us</span>
+                    <h2>Who we are ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, accusantium.</p>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti sequi deleniti officia delectus libero quas repellendus doloremque fuga, nobis, consequuntur aliquam fugiat porro pariatur temporibus accusamus cupiditate totamdolores?</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+                <div class="jumbotron">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic dolores rem ab dolorum perferendis nulla consectetur suscipit totam aspernatur, amet pariatur, error veritatis. Explicabo eum alias impedit id consectetur.</p>
+                </div>
+            </div>
+            <div class="img-bloc">
+                <img src="./assets/Accueil.jpg" alt="Image">
+            </div>
+        </section>
+        <section id="services">
+            <div class="title">
+                <span>Our services</span>
+                <h2>High quality constructions solutions for residentials & industries !</h2>
+            </div>
+            <div class="container">
+                <div class="item-service">
+                    <div class="heading">
+                        <i class="fa-solid fa-trowel-bricks"></i>
+                        <h3>Architecture <br> & building</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut, impedit consequuntur odio laudantium eos illo pariatur fuga nulla porro?</p>
+                    <a href="#" class="btn btn-more">Read more</a>
+                </div>
+                <div class="item-service">
+                    <div class="heading">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <h3>Construction <br>Consultants</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut, impedit consequuntur odio laudantium eos illo pariatur fuga nulla porro?</p>
+                    <a href="#" class="btn btn-more">Read more</a>
+                </div>
+                <div class="item-service">
+                    <div class="heading">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                        <h3>Construction <br>Management</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut, impedit consequuntur odio laudantium eos illo pariatur fuga nulla porro?</p>
+                    <a href="#" class="btn btn-more">Read more</a>
+                </div>
+            </div>
+        </section>
+        <section id="hero">
+            <div class="container">
+                <div class="title">
+                    <span>world leading industry corporation</span>
+                    <h2>Best a grade commercial & residential services</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi beatae nam mollitia totam laudantium accusamus facere voluptate ducimus perspiciatis nostrum doloribus quae</p>
+                <div class="twin">
+                    <div class="item">
+                        <span><i class="fa-regular fa-envelope"></i></span>
+                        <div class="twin-contact">
+                            <b>Powerful product strategy</b>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <div class="twin-contact">
+                            <b>Awwards winning projects</b>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-bloc">
+                <img src="./assets/hero.jpg" alt="Image">
+            </div>
+        </section>
+        <section id="recent">
+            <div class="title">
+                <span>Featured projects</span>
+                <h2>Our recents work</h2>
+            </div>
+            <div class="container">
+                <div class="feature">
+                    <div class="img">
+                        <img src="./assets/recent/modern-business-building-scenery-touching-sky.jpg" alt="Image">
+                    </div>
+                    <div class="description">
+                        <h3>The falling water house <span class="subtitle">Building interior</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, vel.</p>
+                        <a href="#" class="btn btn-more">Explore more <i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="img">
+                        <img src="./assets/recent/modern-residential-building.jpg" alt="Image">
+                    </div>
+                    <div class="description">
+                        <h3>The falling water house <span class="subtitle">Building interior</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, vel.</p>
+                        <a href="#" class="btn btn-more">Explore more <i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="img">
+                        <img src="./assets/recent/skyscrapers-from-low-angle-view.jpg" alt="Image">
+                    </div>
+                    <div class="description">
+                        <h3>The falling water house <span class="subtitle">Building interior</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, vel.</p>
+                        <a href="#" class="btn btn-more">Explore more <i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="marques">
+            <div class="img-logo">
+                <img src="./assets/marques/1.svg" alt="marque">
+            </div>
+            <div class="img-logo">
+                <img src="./assets/marques/2.svg" alt="marque">
+            </div>
+            <div class="img-logo">
+                <img src="./assets/marques/3.svg" alt="marque">
+            </div>
+            <div class="img-logo">
+                <img src="./assets/marques/4.svg" alt="marque">
+            </div>
+            <div class="img-logo">
+                <img src="./assets/marques/5.svg" alt="marque">
+            </div>
+            <div class="img-logo">
+                <img src="./assets/marques/6.svg" alt="marque">
+            </div>
+            <div class="img-logo">
+                <img src="./assets/marques/7.svg" alt="marque">
+            </div>
+            <div class="img-logo">
+                <img src="./assets/marques/8.svg" alt="marque">
+            </div>
+        </section>
+        <section id="contact">
+            <div class="title">
+                <span>Lorem ipsum dolor sit amet.</span>
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, iste.</h2>
+            </div>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+        </section>
+        <section id="contact-form">
+            <aside>
+                <h4>Our location</h4>
+                <span>20280 Mostaqbal</span>
+                <span>Sidi maarouf, Casablanca</span>
+                <h4>Quick contact</h4>
+                <span>Email : contact@modernys.com</span>
+                <span>Phone : +221 XX XXX XX XX</span>
+                <div class="info">
+                    We will getback to you within 24 hours, or call us everyday,<br> 10h : 00 - 17h : 00
+                </div>
+                <a href="tel:+221 XX XXX XX XX" class="tel"><i class="fa-solid fa-phone"></i> +221 XX XXX XX XX</a><br>
+                <a href="tel:0629511197" class="tel"><i class="fa-solid fa-phone"></i> +212 629 511 197</a>
+            </aside>
+            <form action="#">
+                <h3>Request a quote</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda blanditiis accusamus voluptatem delectus. Impedit quae unde reiciendis ad sequi asperiores deserunt tempora, provident culpa at esse numquam non eveniet quam!</p>
+                <div class="input-group">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Phone">
+                    <select name="industry" id="industry">
+                        <option value="">Select your L'agence</option>
+                        <option value="L'agence 1">L'agence 1</option>
+                        <option value="L'agence 2">L'agence 2</option>
+                        <option value="L'agence 3">L'agence 3</option>
+                        <option value="L'agence 4">L'agence 4</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <textarea name="msg" id="" cols="30" rows="5" placeholder="Additional details"></textarea>
+                <div class="submit-group">
+                    <a type="submit" class="btn">Submit request <i class="fa-solid fa-paper-plane"></i></a>
+                    <div class="accept">
+                        <input type="checkbox" name="accept" id="accept"><label for="accept">I accept the privacy and terms.</label>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id="team">
+            <h2>Our team</h2>
+            <div class="container">
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="./assets/team/Mathieu.jpg" alt="member">
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <div class="content">
+                                <span class="name">
+                                    <a href="#">Mathieu</a>
+                                </span>
+                                <span class="position">Consultant</span>
+                                <ul class="social">
+                                    <li>
+                                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="./assets/team/Selena.jpg" alt="member">
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <div class="content">
+                                <span class="name">
+                                    <a href="#">Selena</a>
+                                </span>
+                                <span class="position">Engineer</span>
+                                <ul class="social">
+                                    <li>
+                                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="./assets/team/Raphael.jpg" alt="member ">
+                    </div>
+                    <div class="back ">
+                        <div class="inner ">
+                            <div class="content ">
+                                <span class="name ">
+                                    <a href="# ">Raphael</a>
+                                </span>
+                                <span class="position ">Expert</span>
+                                <ul class="social ">
+                                    <li>
+                                        <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com "><i class="fa-brands fa-twitter "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com "><i class="fa-brands fa-instagram "></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-bx">
+                    <div class="front">
+                        <img src="./assets/team/Victor.jpg" alt="member ">
+                    </div>
+                    <div class="back ">
+                        <div class="inner ">
+                            <div class="content ">
+                                <span class="name ">
+                                    <a href="# ">Victor</a>
+                                </span>
+                                <span class="position ">Architect</span>
+                                <ul class="social ">
+                                    <li>
+                                        <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com "><i class="fa-brands fa-twitter "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com "><i class="fa-brands fa-instagram "></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonial">
+            <div class="title">
+                <span>What our client say ?</span>
+                <h2>Testimony</h2>
+                <p>View what our customers are saying about us to get a better idea of ​​who we are. </p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis dignissimos, a eum quo, quos commodi repellat corporis veniam nihil, est repellendus molestias voluptatum in! Laborum temporibus possimus accusamus beatae quos?</p>
+                <br>
+                <a href="#" class="btn">Share your advice <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+            <div class="testimony">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/author.jpg" alt="Image">
+                            <p>They are the best and expertly trained team members who take the extra step and go the extra mill, all to fulfill our promise to deliver innovative and dynamic solutions to our customers to fit the needs of a rapidly changing
+                                global environment which was perfect for our needs !!</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/author.jpg" alt="Image">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, modi! Eaque nobis quae omnis hic. Sit commodi alias libero ea laudantium tenetur dicta, consequuntur neque error eius nihil beatae illum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <!-- <i class="fas fa-chevron-right"></i> -->
+                </div>
+                <div class="swiper-button-prev">
+                    <!-- <i class="fas fa-chevron-left"></i> -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="map">
+            <div class="title">
+                <span>Location</span>
+                <h2>Where to find us</h2>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6647.187998399065!2d-7.636170653768081!3d33.58988923068274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d29370178259%3A0x56f4486d1d72b804!2sGAUTHIER%2C%20Casablanca%2020250!5e0!3m2!1sfr!2sma!4v1691161886900!5m2!1sfr!2sma"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="bande1">
+            <div class="bloc">
+                <img src="./assets/logo.png" alt="logo du site">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, minima.</p>
+                <ul class="social">
+                    <li>
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bloc">
+                <h4>Services</h4>
+                <ul>
+                    <li>
+                        <a href="#">Construction manage</a>
+                    </li>
+                    <li>
+                        <a href="#">Construction Consultants</a>
+                    </li>
+                    <li>
+                        <a href="#">Architecture & Building</a>
+                    </li>
+                    <li>
+                        <a href="#">Accueil renovations</a>
+                    </li>
+                    <li>
+                        <a href="#">Tiling & painting</a>
+                    </li>
+                    <li>
+                        <a href="#">Interior design</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="bloc">
+                <h4>L'agence</h4>
+                <ul>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Meet our team</a>
+                    </li>
+                    <li>
+                        <a href="#">News & media</a>
+                    </li>
+                    <li>
+                        <a href="#">Case studies</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bloc">
+                <h4>Newsletter</h4>
+                <p>Sign up for industry alert, thoughts and insights from Senbuilder</p>
+                <form action="#">
+                    <input type="text" name="newsletter" placeholder="Your email">
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </form>
+                <p>Have a question ? <b>click here</b></p>
+            </div>
+        </div>
+        <div class="bande2">
+            <p>Terms & Conditions - Privacy Policy - Sitemap</p>
+            <p>@2023 Senbuilder, by <b>DCS</b> with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js" integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.js" integrity="sha512-S2JCciTJc71f1kRG8qFmU1jryXH/mhfYlLvn7XJEwTcD9EJQTRr6gfMtnU6L/nnaodDgbazrmhdCRwbUuiRNQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.js.map"></script>
+    <script>
+        $('.flip-bx').tilt({
+            glare: true,
+            maxGlare: 1
+        })
+        $('.tips').tilt({
+            glare: true,
+            maxGlare: 1
+        })
+        $('.testimony').tilt({
+            glare: true,
+            maxGlare: 1
+        })
+        $('.img-bloc').tilt({
+            glare: true,
+            maxGlare: 1
+        })
+    </script>
+    <script src="./public/js/script.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
+    <script type="module ">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js' ;
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            spaceBetween: 40,
+            slidesPerView: 1,
+            loop: true,
+
+        })
+        var $ = jQuery;
+        var $slider = $('.slideshow .slider'),
+            maxItems = $('.item', $slider).length,
+            dragging = false,
+            tracking,
+            rightTracking;
+
+        $sliderRight = $('.slideshow').clone().addClass('slideshow-right').appendTo($('.split-slideshow'));
+
+        rightItems = $('.item', $sliderRight).toArray();
+        reverseItems = rightItems.reverse();
+        $('.slider', $sliderRight).html('');
+        for (i = 0; i < maxItems; i++) {
+            $(reverseItems[i]).appendTo($('.slider', $sliderRight));
+        }
+
+        $slider.addClass('slideshow-left');
+        $('.slideshow-left').slick({
+            vertical: true,
+            verticalSwiping: true,
+            arrows: false,
+            infinite: true,
+            dots: true,
+            speed: 1000,
+            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
+        }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+
+            if (currentSlide > nextSlide && nextSlide == 0 && currentSlide == maxItems - 1) {
+                $('.slideshow-right .slider').slick('slickGoTo', -1);
+                $('.slideshow-text').slick('slickGoTo', maxItems);
+            } else if (currentSlide < nextSlide && currentSlide == 0 && nextSlide == maxItems - 1) {
+                $('.slideshow-right .slider').slick('slickGoTo', maxItems);
+                $('.slideshow-text').slick('slickGoTo', -1);
+            } else {
+                $('.slideshow-right .slider').slick('slickGoTo', maxItems - 1 - nextSlide);
+                $('.slideshow-text').slick('slickGoTo', nextSlide);
+            }
+        }).on("mousewheel ", function(event) {
+            event.preventDefault();
+            if (event.deltaX > 0 || event.deltaY < 0) {
+                $(this).slick('slickNext');
+            } else if (event.deltaX < 0 || event.deltaY > 0) {
+                $(this).slick('slickPrev');
+            };
+        }).on('mousedown touchstart', function() {
+            dragging = true;
+            tracking = $('.slick-track', $slider).css('transform');
+            tracking = parseInt(tracking.split(',')[5]);
+            rightTracking = $('.slideshow-right .slick-track').css('transform');
+            rightTracking = parseInt(rightTracking.split(',')[5]);
+        }).on('mousemove touchmove', function() {
+            if (dragging) {
+                newTracking = $('.slideshow-left .slick-track').css('transform');
+                newTracking = parseInt(newTracking.split(',')[5]);
+                diffTracking = newTracking - tracking;
+                $('.slideshow-right .slick-track').css({
+                    'transform': 'matrix(1, 0, 0, 1, 0, ' + (rightTracking - diffTracking) + ')'
+                });
+            }
+        }).on('mouseleave touchend mouseup', function() {
+            dragging = false;
+        });
+
+        $('.slideshow-right .slider').slick({
+            swipe: true,
+            vertical: true,
+            arrows: false,
+            infinite: true,
+            speed: 950,
+            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+            initialSlide: maxItems - 1,
+            loop: true
+        });
+        $('.slideshow-text').slick({
+            swipe: false,
+            vertical: true,
+            arrows: false,
+            infinite: true,
+            speed: 900,
+            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
+        });
+    </script>
+</body>
+
+</html>

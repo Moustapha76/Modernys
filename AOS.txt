@@ -1,0 +1,8 @@
+<!--AOS STYLE-->
+<link href="/includes/aos/2.3.1/dist/aos.css" rel="stylesheet">
+<!--AOS SCRIPT-->
+<script src="/includes/aos/2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<?php if(!IS_MOBILE){ echo 'data-aos="fade-up" data-aos-duration="1000"' ;} ?>
